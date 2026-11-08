@@ -1,0 +1,43 @@
+name: Build macOS executable
+
+# Builds a standalone macOS executable (no Python interpreter required) using
+# PyInstaller, then uploads it as a workflow artifact. The artifact is used to
+# attach the macOS binary to the GitHub release.
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  build-macos:
+    runs-on: macos-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install PyInstaller
+        run: python -m pip install --upgrade pyinstaller
+
+      - name: Build executable
+        run: python -m PyInstaller --clean --noconfirm dtv_yaml_generator.spec
+
+      - name: Smoke test (list states)
+        run: ./dist/DTV_YAML_Generator --list
+
+      - name: Package artifact
+        run: |
+          cd dist
+          zip -r DTV_YAML_Generator_macos.zip DTV_YAML_Generator
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: DTV_YAML_Generator_macos
+          path: dist/DTV_YAML_Generator_macos.zip

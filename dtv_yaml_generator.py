@@ -1067,33 +1067,61 @@ def run_gui(
 # CLI
 # ---------------------------------------------------------------------------
 
+def _resource_dirs() -> List[str]:
+    """Return the directories that may contain bundled data files.
+
+    When the program is frozen into a single-file executable (PyInstaller),
+    bundled data files are unpacked to ``sys._MEIPASS`` at runtime. When it is
+    frozen into a one-folder build, or run from source, the files sit next to
+    the executable / script. The current working directory is also considered
+    so that a user can override the bundled data by placing a file alongside
+    the executable.
+    """
+    dirs: List[str] = []
+    meipass = getattr(sys, "_MEIPASS", None)
+    if meipass:
+        dirs.append(meipass)
+    if getattr(sys, "frozen", False):
+        dirs.append(os.path.dirname(os.path.abspath(sys.executable)))
+    else:
+        dirs.append(os.path.dirname(os.path.abspath(__file__)))
+    dirs.append(os.getcwd())
+    # De-duplicate while preserving order.
+    seen = set()
+    unique: List[str] = []
+    for directory in dirs:
+        if directory not in seen:
+            seen.add(directory)
+            unique.append(directory)
+    return unique
+
+
 def _resolve_data_file(explicit: Optional[str]) -> str:
     """Resolve the dataset path, preferring an explicit value."""
     if explicit:
         return explicit
-    # Prefer a file next to this script, then the current working directory.
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    candidate = os.path.join(script_dir, DEFAULT_DATA_FILE)
-    if os.path.isfile(candidate):
-        return candidate
+    for directory in _resource_dirs():
+        candidate = os.path.join(directory, DEFAULT_DATA_FILE)
+        if os.path.isfile(candidate):
+            return candidate
     return DEFAULT_DATA_FILE
 
 
 def _resolve_lookup_file(explicit: Optional[str]) -> str:
     """Resolve the callsign lookup-table path, preferring an explicit value.
 
-    Search order: explicit value, then a file next to this script, then the
-    current working directory, then the parent directory (the lookup table
-    usually lives alongside the dataset at the project root).
+    Search order: explicit value, then a file next to the executable / script
+    (or unpacked from the frozen bundle), then the current working directory,
+    then the parent directory (the lookup table usually lives alongside the
+    dataset at the project root).
     """
     if explicit:
         return explicit
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    candidates = (
-        os.path.join(script_dir, DEFAULT_LOOKUP_FILE),
-        DEFAULT_LOOKUP_FILE,
-        os.path.join(script_dir, os.pardir, DEFAULT_LOOKUP_FILE),
-    )
+    candidates: List[str] = []
+    for directory in _resource_dirs():
+        candidates.append(os.path.join(directory, DEFAULT_LOOKUP_FILE))
+        candidates.append(os.path.join(directory, os.pardir, DEFAULT_LOOKUP_FILE))
+    candidates.append(DEFAULT_LOOKUP_FILE)
     for candidate in candidates:
         if os.path.isfile(candidate):
             return candidate

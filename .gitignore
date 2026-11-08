@@ -11,3 +11,8 @@ Thumbs.db
 
 # Scratch / temporary working files
 temp/
+
+# PyInstaller build artifacts
+build/
+dist/
+*.spec.bak
