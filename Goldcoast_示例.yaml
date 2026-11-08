@@ -1,0 +1,87 @@
+location: Gold Coast
+
+country: AU
+region: QLD
+
+record_duration_seconds: 90
+
+frequencies:
+  - channel: 40
+    frequency_hz: 613500000
+    frequency_mhz: 613.5
+    bandwidth_mhz: 7
+    standard: DVB-T
+    Callsign: SBS
+    FullName: SBS_Television
+    network_hint: SBS
+    source_name: CH40_6135_SBS
+
+  - channel: 41
+    frequency_hz: 620500000
+    frequency_mhz: 620.5
+    bandwidth_mhz: 7
+    standard: DVB-T
+    Callsign: ABC
+    FullName: ABC_Television
+    network_hint: ABC
+    source_name: CH41_6205_ABC
+
+  - channel: 42
+    frequency_hz: 627500000
+    frequency_mhz: 627.5
+    bandwidth_mhz: 7
+    standard: DVB-T
+    Callsign: BTQ
+    FullName: Seven_Brisbane
+    network_hint: Seven
+    source_name: CH42_6275_Seven
+
+  - channel: 44
+    frequency_hz: 641500000
+    frequency_mhz: 641.5
+    bandwidth_mhz: 7
+    standard: DVB-T
+    Callsign: TVQ
+    FullName: 10_Brisbane
+    network_hint: Ten
+    source_name: CH44_6415_Ten
+
+  - channel: 45
+    frequency_hz: 648500000
+    frequency_mhz: 648.5
+    bandwidth_mhz: 7
+    standard: DVB-T
+    Callsign: QTQ
+    FullName: Nine_Brisbane
+    network_hint: Nine
+    source_name: CH45_6485_Nine
+
+  - channel: 46
+    frequency_hz: 655500000
+    frequency_mhz: 655.5
+    bandwidth_mhz: 7
+    standard: DVB-T
+    Callsign: NEN
+    FullName: Seven_Northern_NSW
+    network_hint: Seven
+    source_name: CH46_6555_Seven
+
+  - channel: 47
+    frequency_hz: 662500000
+    frequency_mhz: 662.5
+    bandwidth_mhz: 7
+    standard: DVB-T
+    Callsign: NBN
+    FullName: Nine_Northern_NSW
+    network_hint: Nine
+    source_name: CH47_6625_Nine
+
+  - channel: 48
+    frequency_hz: 669500000
+    frequency_mhz: 669.5
+    bandwidth_mhz: 7
+    standard: DVB-T
+    Callsign: NRN
+    FullName: 10_Northern_NSW
+    network_hint: Ten
+    source_name: CH48_6695_Ten

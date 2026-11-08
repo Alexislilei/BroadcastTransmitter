@@ -1,0 +1,362 @@
+[
+  {
+    "callsign": "ADS",
+    "fullName": "10_Adelaide",
+    "name": "Ten"
+  },
+  {
+    "callsign": "TVQ",
+    "fullName": "10_Brisbane",
+    "name": "Ten"
+  },
+  {
+    "callsign": "SCN",
+    "fullName": "10_Broken_Hill",
+    "name": "Ten"
+  },
+  {
+    "callsign": "CTC",
+    "fullName": "10_Canberra/ACT",
+    "name": "Ten"
+  },
+  {
+    "callsign": "DTD",
+    "fullName": "10_Darwin",
+    "name": "Ten"
+  },
+  {
+    "callsign": "VDW",
+    "fullName": "10_Eastern_WA",
+    "name": "Ten"
+  },
+  {
+    "callsign": "GDW",
+    "fullName": "10_Geraldton",
+    "name": "Ten"
+  },
+  {
+    "callsign": "GLV",
+    "fullName": "10_Gippsland_Victoria",
+    "name": "Ten"
+  },
+  {
+    "callsign": "MDN",
+    "fullName": "10_Griffith",
+    "name": "Ten"
+  },
+  {
+    "callsign": "ATV",
+    "fullName": "10_Melbourne",
+    "name": "Ten"
+  },
+  {
+    "callsign": "MDV",
+    "fullName": "10_Mildura",
+    "name": "Ten"
+  },
+  {
+    "callsign": "NRN",
+    "fullName": "10_Northern_NSW",
+    "name": "Ten"
+  },
+  {
+    "callsign": "NEW",
+    "fullName": "10_Perth",
+    "name": "Ten"
+  },
+  {
+    "callsign": "TNQ",
+    "fullName": "10_Regional_Queensland",
+    "name": "Ten"
+  },
+  {
+    "callsign": "TEN",
+    "fullName": "10_Sydney",
+    "name": "Ten"
+  },
+  {
+    "callsign": "TNT",
+    "fullName": "10_Tasmania",
+    "name": "Ten"
+  },
+  {
+    "callsign": "WDW",
+    "fullName": "10_WA_Regional",
+    "name": "Ten"
+  },
+  {
+    "callsign": "BCV",
+    "fullName": "10_Western_Victoria",
+    "name": "Ten"
+  },
+  {
+    "callsign": "ABC",
+    "fullName": "ABC_Television",
+    "name": "ABC"
+  },
+  {
+    "callsign": "ACT",
+    "fullName": "Canberra_TV_Service",
+    "name": "Canberra_TV_Service"
+  },
+  {
+    "callsign": "CDT",
+    "fullName": "Central_Digital_Television_(10)",
+    "name": "Central_Digital_Television_(10)"
+  },
+  {
+    "callsign": "HPO",
+    "fullName": "House_of_Prayer_TV",
+    "name": "House_of_Prayer_TV"
+  },
+  {
+    "callsign": "IMP",
+    "fullName": "Imparja_Nine",
+    "name": "Nine"
+  },
+  {
+    "callsign": "IDQ",
+    "fullName": "Imparja_Nine_Mt_Isa",
+    "name": "Nine"
+  },
+  {
+    "callsign": "NWS",
+    "fullName": "Nine_Adelaide",
+    "name": "Nine"
+  },
+  {
+    "callsign": "QTQ",
+    "fullName": "Nine_Brisbane",
+    "name": "Nine"
+  },
+  {
+    "callsign": "BDN",
+    "fullName": "Nine_Broken_Hill",
+    "name": "Nine"
+  },
+  {
+    "callsign": "NTD",
+    "fullName": "Nine_Darwin",
+    "name": "Nine"
+  },
+  {
+    "callsign": "AMN",
+    "fullName": "Nine_Griffith",
+    "name": "Nine"
+  },
+  {
+    "callsign": "GTV",
+    "fullName": "Nine_Melbourne",
+    "name": "Nine"
+  },
+  {
+    "callsign": "PTV",
+    "fullName": "Nine_Mildura",
+    "name": "Nine"
+  },
+  {
+    "callsign": "NBN",
+    "fullName": "Nine_Northern_NSW",
+    "name": "Nine"
+  },
+  {
+    "callsign": "STW",
+    "fullName": "Nine_Perth",
+    "name": "Nine"
+  },
+  {
+    "callsign": "RTQ",
+    "fullName": "Nine_Regional_Queensland",
+    "name": "Nine"
+  },
+  {
+    "callsign": "VTV",
+    "fullName": "Nine_Regional_Victoria",
+    "name": "Nine"
+  },
+  {
+    "callsign": "GDS",
+    "fullName": "Nine_South_Australia_Regional",
+    "name": "Nine"
+  },
+  {
+    "callsign": "SES",
+    "fullName": "Nine_South_East_SA",
+    "name": "Nine"
+  },
+  {
+    "callsign": "WIN",
+    "fullName": "Nine_Southern_NSW/ACT",
+    "name": "Nine"
+  },
+  {
+    "callsign": "TCN",
+    "fullName": "Nine_Sydney",
+    "name": "Nine"
+  },
+  {
+    "callsign": "TVT",
+    "fullName": "Nine_Tasmania",
+    "name": "Nine"
+  },
+  {
+    "callsign": "WOW",
+    "fullName": "Nine_WA_Regional",
+    "name": "Nine"
+  },
+  {
+    "callsign": "SBS",
+    "fullName": "SBS_Television",
+    "name": "SBS"
+  },
+  {
+    "callsign": "SAS",
+    "fullName": "Seven_Adelaide",
+    "name": "Seven"
+  },
+  {
+    "callsign": "BTQ",
+    "fullName": "Seven_Brisbane",
+    "name": "Seven"
+  },
+  {
+    "callsign": "BKN",
+    "fullName": "Seven_Broken_Hill",
+    "name": "Seven"
+  },
+  {
+    "callsign": "QQQ",
+    "fullName": "Seven_Central",
+    "name": "Seven"
+  },
+  {
+    "callsign": "TND",
+    "fullName": "Seven_Darwin",
+    "name": "Seven"
+  },
+  {
+    "callsign": "VEW",
+    "fullName": "Seven_Eastern_WA",
+    "name": "Seven"
+  },
+  {
+    "callsign": "GTW",
+    "fullName": "Seven_Geraldton",
+    "name": "Seven"
+  },
+  {
+    "callsign": "HSV",
+    "fullName": "Seven_Melbourne",
+    "name": "Seven"
+  },
+  {
+    "callsign": "STV",
+    "fullName": "Seven_Mildura",
+    "name": "Seven"
+  },
+  {
+    "callsign": "ITQ",
+    "fullName": "Seven_Mt_Isa",
+    "name": "Seven"
+  },
+  {
+    "callsign": "NEN",
+    "fullName": "Seven_Northern_NSW",
+    "name": "Seven"
+  },
+  {
+    "callsign": "TVW",
+    "fullName": "Seven_Perth",
+    "name": "Seven"
+  },
+  {
+    "callsign": "STQ",
+    "fullName": "Seven_Regional_Queensland",
+    "name": "Seven"
+  },
+  {
+    "callsign": "AMV",
+    "fullName": "Seven_Regional_Victoria",
+    "name": "Seven"
+  },
+  {
+    "callsign": "RTS",
+    "fullName": "Seven_Riverland",
+    "name": "Seven"
+  },
+  {
+    "callsign": "SGS",
+    "fullName": "Seven_South_Australia_Regional",
+    "name": "Seven"
+  },
+  {
+    "callsign": "CBN",
+    "fullName": "Seven_Southern_NSW/ACT",
+    "name": "Seven"
+  },
+  {
+    "callsign": "ATN",
+    "fullName": "Seven_Sydney",
+    "name": "Seven"
+  },
+  {
+    "callsign": "TDT",
+    "fullName": "Seven_Tasmania",
+    "name": "Seven"
+  },
+  {
+    "callsign": "WAW",
+    "fullName": "Seven_WA_Regional",
+    "name": "Seven"
+  },
+  {
+    "callsign": "SMT",
+    "fullName": "Snowy_Mountains_TV",
+    "name": "Snowy_Mountains_TV"
+  },
+  {
+    "callsign": "GTS",
+    "fullName": "Southern_Cross_10_SA",
+    "name": "Southern_Cross_10_SA"
+  },
+  {
+    "callsign": "CTS",
+    "fullName": "Adelaide_Community_Television",
+    "name": "Adelaide_Community_Television"
+  },
+  {
+    "callsign": "MGV",
+    "fullName": "Melbourne_Community_Television",
+    "name": "Melbourne_Community_Television"
+  },
+  {
+    "callsign": "MTN/MDN",
+    "fullName": "WIN_Television_Griffith",
+    "name": "WIN_Television_Griffith"
+  },
+  {
+    "callsign": "RBA",
+    "fullName": "Retransmission_Service_(unknown)",
+    "name": "Retransmission_Service_(unknown)"
+  },
+  {
+    "callsign": "RDS/LRS",
+    "fullName": "Nine_Regional_WA_(probable)",
+    "name": "Nine_Regional_WA_(probable)"
+  },
+  {
+    "callsign": "SDS/MGS",
+    "fullName": "Ten_Regional_WA_(probable)",
+    "name": "Ten_Regional_WA_(probable)"
+  },
+  {
+    "callsign": "SDW",
+    "fullName": "West_Digital_Television",
+    "name": "West_Digital_Television"
+  },
+  {
+    "callsign": "SSW",
+    "fullName": "Seven_Regional_WA",
+    "name": "Seven_Regional_WA"
+  }
+]
