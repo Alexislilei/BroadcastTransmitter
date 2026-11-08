@@ -90,7 +90,7 @@ STANDARD = "DVB-T"
 #:     [{"callsign": "TNQ", "fullName": "10_Regional_Queensland", "name": "Ten"}, ...]
 #:
 #: ``name`` becomes the ``network_hint`` and ``fullName`` becomes ``FullName``.
-DEFAULT_LOOKUP_FILE = "呼号-名称查找表.json"
+DEFAULT_LOOKUP_FILE = "callsign_name_lookup.json"
 
 #: Mean Earth radius in kilometres (used for great-circle distances).
 EARTH_RADIUS_KM = 6371.0088
